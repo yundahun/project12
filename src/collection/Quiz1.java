@@ -33,33 +33,17 @@ public class Quiz1 {
 		System.out.println(list.size());
 		
 		//for문을 이용해서 전체 회원 정보 출력하기
-//		for(int i=0; i<list.size();i++) {
-//		
-//			Character ch = list.get(i); // 리스트에서 회원을 꺼냄
-//			
-//			if(ch == 'A') {
-//				list.remove(i);
-//			}
-//			
-//			System.out.println(ch);
-//
-//		}
+		for(int i=0; i<list.size();i++) {
+		
+			Character ch = list.get(i); // 리스트에서 회원을 꺼냄
+			
+			if(ch == 'A') {
+				list.remove(i);
+			}
+			
+			System.out.println(ch);
+
+		}
 	}
 }
 
-class Character {
-	
-	char eng;
-
-	public Character(char eng) {
-		super();
-		this.eng = eng;
-	}
-
-	@Override
-	public String toString() {
-		return "Character [eng=" + eng + "]";
-	}
-
-
-}
